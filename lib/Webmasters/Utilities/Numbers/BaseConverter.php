@@ -8,6 +8,10 @@ class BaseConverter
     
     public static function setShifting($shifting)
     {
+        if (!is_int($shifting)) {
+            trigger_error('Shifting must be a number', E_USER_ERROR);
+        }
+        
         self::$shifting = $shifting;
     }
 

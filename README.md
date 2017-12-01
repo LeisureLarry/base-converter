@@ -2,7 +2,7 @@
 
 ## Webmasters Base Converter 10 <-> 36
 
-Just another base converter for numbers with an optional shifting
+Just another base converter for integers to base 36 and back (with an optional shifting)
 
 ### Examples
 

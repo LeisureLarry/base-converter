@@ -1,7 +1,7 @@
 {
     "name": "webmasters/base-converter",
     "type": "library",
-    "description": "Base converter for numbers with optional shifting",
+    "description": "Base converter for integers to base 36 and back (with optional shifting)",
     "keywords": [
         "convert",
         "numbers",

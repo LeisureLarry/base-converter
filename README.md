@@ -1,6 +1,6 @@
 # base-converter
 
-## Webmasters Base Converter
+## Webmasters Base Converter 10 <-> 36
 
 Just another base converter for numbers with an optional shifting
 

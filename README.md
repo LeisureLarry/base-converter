@@ -1,0 +1,25 @@
+# base-converter
+
+## Webmasters Base Converter
+
+Just another base converter for numbers with an optional shifting
+
+### Examples
+
+```php
+<?php
+
+use \Webmasters\Utilities\Numbers\BaseConverter;
+
+BaseConverter::setShifting(999);
+
+$base10 = 1;
+$base36 = BaseConverter::toBase36($base10); // 'rs'
+
+$base36 = 'rs';
+$base36 = BaseConverter::toBase10($base36); // 1
+
+```
+
+### Idea
+[Jan Teriete](https://plus.google.com/106660436858103395374?rel=author)

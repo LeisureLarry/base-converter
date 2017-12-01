@@ -1,0 +1,25 @@
+{
+    "name": "webmasters/base-converter",
+    "type": "library",
+    "description": "Base converter for numbers with optional shifting",
+    "keywords": [
+        "convert",
+        "numbers",
+        "short-url"
+    ],
+    "homepage": "http://github.com/LeisureLarry/base-converter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Teriete",
+            "email": "leisure.larry@habmalnefrage.de",
+            "homepage": "http://blog-das-oertchen.de/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-0": { "Webmasters": "lib/" }
+    }
+}

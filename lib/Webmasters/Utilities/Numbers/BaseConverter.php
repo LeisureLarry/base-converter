@@ -17,11 +17,22 @@ class BaseConverter
 
     public static function toBase36($base10)
     {
-        return base_convert($base10 + self::$shifting, 10, 36);
+        return self::baseConvert($base10 + self::$shifting, 10, 36);
     }
 
     public static function toBase10($base36)
     {
-        return base_convert($base36, 36, 10) - self::$shifting;
+        return self::baseConvert($base36, 36, 10) - self::$shifting;
+    }
+    
+    protected static function baseConvert($number, $fromBase, $toBase)
+    {
+        if (function_exists('Phlib\base_convert')) {
+            $result = \Phlib\base_convert($number, $fromBase, $toBase);
+        } else {
+            $result = base_convert($number, $fromBase, $toBase);
+        }
+        
+        return $result;
     }
 }

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Thanks to phirschybar for the basic idea of using base conversions for short urls
+ * https://stackoverflow.com/a/8574378/7745708
+ */
+
 namespace Webmasters\Utilities\Numbers;
 
 class BaseConverter
